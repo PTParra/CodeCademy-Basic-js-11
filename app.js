@@ -27,6 +27,8 @@ const menu = {
     }
 };
 
+//Version sencilla
+/*
 console.log(menu);
 
 console.log("Añadir lechuga al menu");
@@ -38,6 +40,31 @@ console.log(menu);
 console.log("Añadir precio al menu");
 
 menu.price = 10;
+
+console.log(menu);
+
+console.log("Devolver especial del dia");
+
+console.log(menu.todaysSpecial);
+*/
+
+
+const meals = ['lechuga', 'tomate', 'patata', 'uva', 'filete'];
+const prices = [10, 50, 30, 33, 69, 100, 54, 60];
+
+console.log("Posibles comidas:" ,meals);
+
+console.log("Posibles precios:" , prices);
+
+console.log("Añadir comida al menu");
+
+menu.meal = meals[Math.floor((Math.random() * (meals.length - 1)))];
+
+console.log(menu);
+
+console.log("Añadir precio al menu");
+
+menu.price = prices[Math.floor((Math.random() * (prices.length - 1)))];
 
 console.log(menu);
 
